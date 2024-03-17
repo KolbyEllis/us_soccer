@@ -146,32 +146,6 @@
             }
         }
 
-        .cs-ul {
-            width: 80%;
-            /* 32px - 36px */
-            margin: 0 0 clamp(2rem, 4vw, 2.25rem) 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            /* 24px - 32px */
-            row-gap: clamp(1.5rem, 4vw, 2rem);
-        }
-
-        .cs-li {
-            /* 14px - 16px */
-            font-size: clamp(0.875rem, 1.5vw, 1rem);
-            list-style: none;
-            line-height: 1.5em;
-            font-weight: 700;
-            margin: 0;
-            color: var(--headerColor);
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap: (32/16rem);
-        }
-
         .cs-button-solid {
             font-size: (16/16rem);
             /* 46px - 56px */
@@ -421,9 +395,7 @@
                     transform: scale(1.2);
                 }
 
-                .cs-icon {
-                    transform: translateX(0.4375rem);
-                }
+
             }
 
             &:before {
@@ -458,12 +430,7 @@
             transition: transform 0.3s;
         }
 
-        .cs-icon {
-            width: (24/16rem);
-            height: auto;
-            display: block;
-            transition: transform 0.3s;
-        }
+
 
         .cs-info {
             display: flex;

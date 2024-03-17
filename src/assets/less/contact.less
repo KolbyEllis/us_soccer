@@ -237,7 +237,6 @@
             /* 16px - 24px */
             padding: clamp(1rem, 3.5vw, 1.5rem);
             border-radius: (24/16rem);
-            background-color: var(--primary);
             display: flex;
             /* prevents padding from adding to height and width */
             box-sizing: border-box;
@@ -248,47 +247,6 @@
             gap: clamp(1.5rem, 4vw, 2rem);
         }
 
-        .cs-map {
-            width: 100%;
-            /* 300px - 425px */
-            height: clamp(18.75rem, 63.4vw, 26.5625rem);
-            border-radius: (24/16rem);
-            /* clips the corners of the img tag */
-            overflow: hidden;
-            position: relative;
-            display: block;
-
-            &:before {
-                content: "";
-                position: absolute;
-                display: block;
-                /* 32px - 48px */
-                width: clamp(2rem, 4vw, 3rem);
-                height: clamp(2rem, 4vw, 3rem);
-                background: url("https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-red.svg");
-                background-size: contain;
-                background-position: center;
-                background-repeat: no-repeat;
-                opacity: 1;
-                /* 148px - 220px */
-                top: clamp(9.25rem, 30.7vw, 13.75rem);
-                /* push to the center line of the div */
-                left: 50%;
-                /* push X amount of pixels from it's current position off the center line */
-                margin-left: (10/16rem);
-                z-index: 10;
-            }
-
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-            }
-        }
-
         .cs-contact-group {
             padding: 0;
             margin: 0;
@@ -297,6 +255,8 @@
             align-items: flex-start;
             flex-direction: column;
             gap: (16/16rem);
+            padding: 2rem;
+            background-color: #131D44;
         }
 
         .cs-item {

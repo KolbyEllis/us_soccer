@@ -337,6 +337,7 @@
             grid-template-columns: repeat(12, 1fr);
             /* 16px - 20px */
             gap: clamp(1rem, 2.5vw, 1.25rem);
+            pointer-events: none;
         }
 
         .cs-item {
@@ -407,7 +408,7 @@
             font-weight: bold;
             text-align: inherit;
             margin: 0 0 (12/16rem) 0;
-            color: var(--bodyTextColorWhite);
+            color: var(--primary);
             transition: color 0.3s;
         }
 
@@ -629,32 +630,6 @@
             justify-content: center;
             align-items: center;
             gap: (8/16rem);
-        }
-
-        .cs-link {
-            width: (32/16rem);
-            height: (32/16rem);
-            background-color: #e8e8e8;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            &:hover {
-                .cs-icon {
-                    filter: grayscale(0) brightness(100%);
-                    transform: translateY(-0.25rem);
-                }
-            }
-        }
-
-        .cs-icon {
-            width: (12/16rem);
-            height: auto;
-            filter: grayscale(1) brightness(90%);
-            transition:
-                filter 0.3s,
-                transform 0.3s;
-            z-index: 10;
         }
     }
 }

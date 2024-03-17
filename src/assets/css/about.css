@@ -286,6 +286,7 @@
     grid-template-columns: repeat(12, 1fr);
     /* 16px - 20px */
     gap: clamp(1rem, 2.5vw, 1.25rem);
+    pointer-events: none;
   }
   #services-1253 .cs-item {
     width: 100%;
@@ -346,7 +347,7 @@
     font-weight: bold;
     text-align: inherit;
     margin: 0 0 0.75rem 0;
-    color: var(--bodyTextColorWhite);
+    color: var(--primary);
     transition: color 0.3s;
   }
   #services-1253 .cs-item-text {
@@ -533,25 +534,6 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-  }
-  #meet-team-979 .cs-link {
-    width: 2rem;
-    height: 2rem;
-    background-color: #e8e8e8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #meet-team-979 .cs-link:hover .cs-icon {
-    filter: grayscale(0) brightness(100%);
-    transform: translateY(-0.25rem);
-  }
-  #meet-team-979 .cs-icon {
-    width: 0.75rem;
-    height: auto;
-    filter: grayscale(1) brightness(90%);
-    transition: filter 0.3s, transform 0.3s;
-    z-index: 10;
   }
 }
 /* Tablet - 768px */
