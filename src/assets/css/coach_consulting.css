@@ -199,14 +199,14 @@
     margin: 0;
     color: var(--bodyTextColor);
   }
-  #sbsr-522 .cs-picture {
+  #sbsr-522 .cs-video {
     width: 100%;
     /* 244px - 339px, changes clamp at tablet */
     height: clamp(14rem, 62vw, 21.1875rem);
     display: block;
     position: relative;
   }
-  #sbsr-522 .cs-picture img {
+  #sbsr-522 .cs-video img {
     position: absolute;
     top: 0;
     left: 0;
