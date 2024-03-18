@@ -133,7 +133,7 @@
   #why-choose-1631 .cs-text:last-of-type {
     margin-bottom: 0rem;
   }
-  #why-choose-1631 .cs-picture {
+  #why-choose-1631 .cs-video {
     display: block;
     position: relative;
     width: 100%;
@@ -147,7 +147,7 @@
     /* sends it to the 2nd posiiton in the bottom */
     order: 2;
   }
-  #why-choose-1631 .cs-picture img {
+  #why-choose-1631 .cs-video img {
     position: absolute;
     top: 0;
     left: 0;
