@@ -118,6 +118,12 @@
     align-items: center;
     gap: 0.75rem;
   }
+  #contact-322 .checkbox {
+    padding: 1.5rem 0rem;
+  }
+  #contact-322 .checkbox span {
+    padding: 0.2rem;
+  }
   #contact-322 .cs-label {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
@@ -190,8 +196,8 @@
   #contact-322 .cs-submit {
     text-transform: uppercase;
     width: 17.6875rem;
-    color: var(--headerColor);
-    background-color: var(--secondaryLight);
+    color: #fff;
+    background-color: var(--primary);
     border: none;
     transition: color 0.3s;
   }
@@ -223,6 +229,7 @@
     gap: 1rem;
     padding: 2rem;
     background-color: #131D44;
+    border-radius: 0.5rem;
   }
   #contact-322 .cs-item {
     list-style: none;
@@ -236,7 +243,7 @@
     line-height: 1.2em;
     font-weight: 700;
     margin-bottom: 0.75rem;
-    color: var(--secondaryLight);
+    color: var(--primary);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -250,9 +257,6 @@
     text-decoration: none;
     color: var(--bodyTextColorWhite);
     transition: color 0.3s;
-  }
-  #contact-322 .cs-link:hover {
-    color: var(--secondaryLight);
   }
 }
 /* Tablet - 650px */

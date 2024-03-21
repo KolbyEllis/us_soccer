@@ -142,6 +142,14 @@
             gap: (12/16rem);
         }
 
+        .checkbox {
+            padding: 1.5rem 0rem;
+        }
+
+        .checkbox span {
+            padding: 0.2rem;
+        }
+
         .cs-label {
             /* 14px - 16px */
             font-size: clamp(0.875rem, 1.5vw, 1rem);
@@ -222,8 +230,8 @@
         .cs-submit {
             text-transform: uppercase;
             width: (283/16rem);
-            color: var(--headerColor);
-            background-color: var(--secondaryLight);
+            color: #fff;
+            background-color: var(--primary);
             border: none;
             transition: color 0.3s;
             &:hover {
@@ -257,6 +265,7 @@
             gap: (16/16rem);
             padding: 2rem;
             background-color: #131D44;
+            border-radius: (8/16rem);
         }
 
         .cs-item {
@@ -272,7 +281,7 @@
             line-height: 1.2em;
             font-weight: 700;
             margin-bottom: (12/16rem);
-            color: var(--secondaryLight);
+            color: var(--primary);
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -287,12 +296,6 @@
             text-decoration: none;
             color: var(--bodyTextColorWhite);
             transition: color 0.3s;
-        }
-
-        .cs-link {
-            &:hover {
-                color: var(--secondaryLight);
-            }
         }
     }
 }

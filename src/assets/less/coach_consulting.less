@@ -489,33 +489,6 @@
                 left: 0;
             }
         }
-
-        .cs-graphic1 {
-            width: (650/16em);
-            height: auto;
-            display: block;
-            position: absolute;
-            right: (-205/16em);
-            top: (-125/16em);
-            z-index: -1;
-            /* flips it horizontally */
-            transform: scaleX(-1);
-        }
-
-        .cs-graphic2 {
-            width: (267/16em);
-            height: auto;
-            display: block;
-            position: absolute;
-            transform: rotate(-137deg) scaleX(-1);
-            left: (-45/16em);
-            bottom: (33/16em);
-            z-index: -1;
-        }
-
-        .cs-floater {
-            display: none;
-        }
     }
 }
 
@@ -543,18 +516,143 @@
     }
 }
 
-/* Large Desktop - 1900px */
-@media only screen and (min-width: 118.75rem) {
-    #sbsr-678 {
-        .cs-floater {
-            width: (292/16rem);
-            height: auto;
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    @keyframes floatAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-2rem);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes floatAnimation2 {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-3rem);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    #gallery-1374 {
+        padding: var(--sectionPadding);
+        position: relative;
+        z-index: 1;
+        /* Prevents overflow from the image going off screen */
+        overflow: hidden;
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-topper {
+            color: var(--secondary);
+        }
+
+        .cs-image-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 1fr;
+            /* 16px - 60px */
+            gap: clamp(1rem, 4.3vw, 3.75rem);
+        }
+
+        .cs-link {
+            text-decoration: none;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: (16/16rem);
+        }
+
+        .cs-item {
+            list-style: none;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            grid-column: span 12;
+
+            &:hover {
+                .cs-h3,
+                .cs-desc {
+                    color: #fff;
+                }
+
+                .cs-item-text {
+                    background-color: var(--primary);
+                }
+
+                .cs-icon-wrapper {
+                    border-color: #fff;
+                }
+
+                .cs-icon {
+                    filter: brightness(1000%) grayscale(1);
+                }
+            }
+        }
+
+        .cs-picture {
+            width: 100%;
+            /* 344px - 420px */
+            height: clamp(21.5rem, 30vw, 26.25rem);
+            margin: auto;
+            border-radius: (24/16rem);
             display: block;
-            position: absolute;
-            left: 0;
-            top: (20/16rem);
-            /* flips it horizontally */
-            transform: scaleX(-1);
+            position: relative;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
         }
     }
 }
+
+/* In Between - 600px */
+@media only screen and (min-width: 37.5rem) {
+    #gallery-1374 {
+        .cs-item {
+            grid-column: span 6;
+        }
+    }
+}
+
+                                
