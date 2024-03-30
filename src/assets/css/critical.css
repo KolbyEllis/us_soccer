@@ -77,35 +77,4 @@
     margin-bottom: clamp(2.5rem, 4vw, 3rem);
     color: #fff;
   }
-  #hero-219 .cs-button-solid {
-    font-size: 1rem;
-    line-height: 3.5rem;
-    text-decoration: none;
-    font-weight: 700;
-    margin: auto;
-    color: #fff;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    border-radius: 0.25rem;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-  }
-  #hero-219 .cs-button-solid:before {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 0%;
-    background: #000;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 0.25rem;
-    transition: width 0.3s;
-  }
-  #hero-219 .cs-button-solid:hover:before {
-    width: 100%;
-  }
 }

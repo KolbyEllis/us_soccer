@@ -85,41 +85,5 @@
             margin-bottom: clamp(2.5rem, 4vw, 3rem);
             color: #fff;
         }
-
-        .cs-button-solid {
-            font-size: (16/16rem);
-            line-height: (56/16rem);
-            text-decoration: none;
-            font-weight: 700;
-            margin: auto;
-            color: #fff;
-            padding: 0 (24/16rem);
-            background-color: var(--primary);
-            border-radius: (4/16rem);
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-
-            &:before {
-                content: "";
-                position: absolute;
-                display: block;
-                height: 100%;
-                width: 0%;
-                background: #000;
-                opacity: 1;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                border-radius: (4/16rem);
-                transition: width 0.3s;
-            }
-
-            &:hover {
-                &:before {
-                    width: 100%;
-                }
-            }
-        }
     }
 }
