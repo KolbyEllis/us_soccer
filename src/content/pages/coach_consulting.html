@@ -16,27 +16,7 @@ eleventyNavigation:
 
 {% block body %}
 
-<!-- ============================================ -->
-<!--                   Banner                     -->
-<!-- ============================================ -->
-
-<div id="banner-849">
-    <div class="cs-container">
-        <span class="cs-int-title">Coach Consulting</span>
-    </div>
-    <!--Background Image-->
-    <picture class="cs-background" aria-hidden="true">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/banner.png">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/banner.png">
-        <img loading="lazy" decoding="async" src="/assets/images/banner.png" alt="yoga" width="1280" height="568">
-    </picture>
-    <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
-    <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
-    </svg>
-</div>
+{% include 'components/banner.html' %}
 
 <!-- ============================================ -->
 <!--              Side By Side Reverse            -->
@@ -85,6 +65,59 @@ eleventyNavigation:
                 <img srcset="/assets/images/usspokane-p.png" alt="Elite Earthworks California" media="(min-width: 601px)">
                 <img srcset="/assets/images/usspokane-p-m.png" alt="Elite Earthworks company southern California" media="(max-width: 600px)">
             </video> 
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--            Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbsr-678">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Main Image-->
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/mo-m.png">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/mo.png">
+                <img loading="lazy" decoding="async" src="/assets/images/mo.png" alt="landscape" width="562" height="568">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Soccer Coach Consultants</span>
+            <h2 class="cs-title">Meet The <span class="cs-color">Coach</span></h2>
+            <h2>Morgan Hartanov</h2>
+            <p class="cs-text">
+                I have coached all levels of the game from U5-U23 through my 15+ years of coaching soccer.  I have worked for multiple clubs and schools in the Spokane area as a youth director, coaching director, and head coach.  I desire to serve coaches locally in Spokane by giving them tools to be more successful at engaging, retaining and developing players of all ages.             
+            </p>
+            
+                <p class="cs-text">
+                    Coach consulting is FREE to all volunteer coaches and is provided on a first-come, first-served basis while availability lasts.
+                </p>
+
+                <div class="cs-contact-group">
+                <a class="cs-link" href="tel:555-555-0234">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/phone.svg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Call Now</span>
+                        <span class="cs-link-content">(509) 999 4050</span>
+                    </div>
+                </a>
+                <a class="cs-link" href="mailto:Info@health&wellness.com">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/mail.svg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Send A Message</span>
+                        <span class="cs-link-content">mo@usspokane.com</span>
+                    </div>
+                </a>
+            </div>
+            <a href="/contact" class="cs-button-solid" aria-label="learn more about us">Request A Meeting</a>
         </div>
     </div>
 </section>
@@ -146,65 +179,7 @@ eleventyNavigation:
         </ul>
     </div>
 </section>
-                                
-<!-- ============================================ -->
-<!--            Side By Side Reverse             -->
-<!-- ============================================ -->
-
-<section id="sbsr-678">
-    <div class="cs-container">
-        <div class="cs-image-group">
-            <!--Main Image-->
-            <picture class="cs-picture">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/mo-m.png">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/mo.png">
-                <img loading="lazy" decoding="async" src="/assets/images/mo.png" alt="landscape" width="562" height="568">
-            </picture>
-        </div>
-        <div class="cs-content">
-            <span class="cs-topper">Soccer Coach Consultants</span>
-            <h2 class="cs-title">Meet The <span class="cs-color">Coach</span></h2>
-            <h2>Morgan Hartanov</h2>
-            <p class="cs-text">
-                I have coached all levels of the game from U5-U23 through my 15+ years of coaching soccer.  I have worked for multiple clubs and schools in the Spokane area as a youth director, coaching director, and head coach.  I desire to serve coaches locally in Spokane by giving them tools to be more successful at engaging, retaining and developing players of all ages.             
-            </p>
-            
-                <p class="cs-text">
-                    Coach consulting is FREE to all volunteer coaches and is provided on a first-come, first-served basis while availability lasts.
-                </p>
-    
-
-                <div class="cs-contact-group">
-                <a class="cs-link" href="tel:555-555-0234">
-                    <picture class="cs-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fphone.svg" alt="icon" width="24" height="24">
-                    </picture>
-                    <div class="cs-info">
-                        <span class="cs-header">Call Now</span>
-                        <span class="cs-link-content">(509) 999 4050</span>
-                    </div>
-                </a>
-                <a class="cs-link" href="mailto:Info@health&wellness.com">
-                    <picture class="cs-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fmail.svg" alt="icon" width="24" height="24">
-                    </picture>
-                    <div class="cs-info">
-                        <span class="cs-header">Send A Message</span>
-                        <span class="cs-link-content">mo@usspokane.com</span>
-                    </div>
-                </a>
-            </div>
-            <a href="/contact" class="cs-button-solid" aria-label="learn more about us">Request A Meeting</a>
-        </div>
-    </div>
-</section>
-                 
-
-
-                                
-                                
+                                                                
 {% include 'components/cta.html' %}
 
 {% endblock %}

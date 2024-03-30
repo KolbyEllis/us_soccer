@@ -13,27 +13,7 @@ permalink: 'contact/'
 
 {% block body %}
 
-<!-- ============================================ -->
-<!--                   Banner                     -->
-<!-- ============================================ -->
-
-<div id="banner-849">
-    <div class="cs-container">
-        <span class="cs-int-title">Contact Us Today</span>
-    </div>
-    <!--Background Image-->
-    <picture class="cs-background" aria-hidden="true">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/banner.png">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/banner.png">
-        <img loading="lazy" decoding="async" src="/assets/images/banner.png" alt="yoga" width="1280" height="568">
-    </picture>
-    <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
-    <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
-    </svg>
-</div>
+{% include 'components/banner.html' %}
 
 <!-- ============================================ -->
 <!--                   Contact                    -->
@@ -45,7 +25,7 @@ permalink: 'contact/'
             <span class="cs-topper">Contact Us</span>
             <h2 class="cs-title">We Are Excited To Work With You.</h2>
             <!--Form-->
-            <form class="cs-form" id="cs-form-322" name="Contact Form" method="post">
+            <form class="cs-form" id="cs-form-322" name="Contact Form" method="post" netlify>
                 <label class="cs-label">
                     First Name
                     <input class="cs-input" required type="text" id="name-322" name="name" placeholder="First Name">
@@ -54,8 +34,7 @@ permalink: 'contact/'
                     Last Name
                     <input class="cs-input" required type="text" id="name-322" name="name" placeholder="Last Name">
                     <div class="checkbox">
-                    <input type="checkbox" name="newsletter" id="newsletter-322">
-                    <span>Subscribe to our newsletter</span>
+
                 </div>
                 </label>
                 <label class="cs-label cs-email">
@@ -105,5 +84,7 @@ permalink: 'contact/'
         </div>
     </div>
 </section>
-                                                  
+                 
+{% include 'components/cta.html' %}
+
 {% endblock %}

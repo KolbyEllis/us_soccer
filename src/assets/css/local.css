@@ -8,6 +8,12 @@
     /* clips the zigzag graphic so it does cause overflows */
     overflow: hidden;
   }
+  #sbsr-684 a {
+    text-decoration: none;
+  }
+  #sbsr-684 .cs-content .cs-button-solid {
+    margin-bottom: 2rem;
+  }
   #sbsr-684 .cs-container {
     width: 100%;
     max-width: 80rem;
@@ -108,6 +114,7 @@
 @media only screen and (min-width: 0rem) {
   #stats-887 {
     padding: var(--sectionPadding);
+    padding-top: 0rem;
   }
   #stats-887 .cs-container {
     width: 100%;

@@ -16,27 +16,7 @@ eleventyNavigation:
 
 {% block body %}
 
-<!-- ============================================ -->
-<!--                   Banner                     -->
-<!-- ============================================ -->
-
-<div id="banner-849">
-    <div class="cs-container">
-        <span class="cs-int-title">Camps</span>
-    </div>
-    <!--Background Image-->
-    <picture class="cs-background" aria-hidden="true">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/banner.png">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/banner.png">
-        <img loading="lazy" decoding="async" src="/assets/images/banner.png" alt="yoga" width="1280" height="568">
-    </picture>
-    <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
-    <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
-    </svg>
-</div>
+{% include 'components/banner.html' %}
 
 <!-- ============================================ -->
 <!--                Why Choose Us                 -->
@@ -52,7 +32,7 @@ eleventyNavigation:
                 <img srcset="/assets/images/camps-p-m.png" alt="Elite Earthworks company southern California" media="(max-width: 600px)">
             </video> 
             <div class="cs-content">
-                <span class="cs-topper">Summer Camps 2023</span>
+                <span class="cs-topper">Youth Summer Camps</span>
                 <h2 class="cs-title">About Our Youth Summer Camps</h2>
                 <p class="cs-text">
                     Our youth soccer camps are designed to give players ages 5-14 an opportunity to learn skills by our trained US coaches.  These camps are focused on developing technical skills, increasing motor skills, and giving players the opportunity to have an overall great week!  In addition to learning soccer, we are focused on developing the whole person through our Core Values that can be found on the about tab. We would love the opportunity to work with each of your kids this upcoming summer.
@@ -72,7 +52,7 @@ eleventyNavigation:
 <section id="collection-1579">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Current Camps</span>
+            <span class="cs-topper">Register Now</span>
             <h2 class="cs-title">Register Your Child For a Camp Today</h2>
         </div>
         <ul class="cs-card-group">
@@ -160,7 +140,7 @@ eleventyNavigation:
             <img loading="lazy" decoding="async" src="/assets/images/toddler.png" alt="computer" width="630" height="528" aria-hidden="true">
         </picture>
         <div class="cs-content">
-            <span class="cs-topper">Youth Camps</span>
+            <span class="cs-topper">Toddler Camps</span>
             <h2 class="cs-title">Spring Toddlers Program At Comstock Park </h2>
             <p class="cs-text">
                 Introducing our new Toddler program! Designed specifically for children aged 3.5 to 6 years old, this program offers a fantastic opportunity for your little ones to develop essential motor skills while getting their first taste of soccer in a fun and engaging environment. </p>
@@ -281,18 +261,19 @@ eleventyNavigation:
             <h2 class="cs-title">Our Customer Reviews</h2>
         </div>
         <ul class="cs-card-group">
+            
             <li class="cs-item">
                 <div class="cs-flex-group">
                     <picture class="cs-picture">
-                        <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot1.jpeg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                        <img class="cs-profile" src="/assets/images/woman.png" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
                     </picture>
                     <span class="cs-name">
                         Taylor
-                        <span class="cs-job">Founder of Yokoloko</span>
+                        <span class="cs-job">Customer</span>
                     </span>
                 </div>
                 <div class="wrapper">
-                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/stars.svg" alt="stars" width="96" height="16">
                     <p class="cs-review">
                     
                         US Spokane camps are the best! My 4 yr old stays engaged and has so much fun. Morgan is a fabulous coach and the kids feel really encouraged and excited to come back each week!
@@ -303,20 +284,20 @@ eleventyNavigation:
     </br>
                 </div>
                 <!--Quote Icon-->
-                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                <img class="cs-quote" aria-hidden="true" src="/assets/images/quote.svg" decoding="async" alt="quote icon" width="120" height="99">
             </li>
             <li class="cs-item">
                 <div class="cs-flex-group">
                     <picture class="cs-picture">
-                        <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/review2.png" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                        <img class="cs-profile" src="/assets/images/man.png" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
                     </picture>
                     <span class="cs-name">
                         Adam
-                        <span class="cs-job">Founder of Yokoloko</span>
+                        <span class="cs-job">Customer</span>
                     </span>
                 </div>
                 <div class="wrapper">
-                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/stars.svg" alt="stars" width="96" height="16">
                     <p class="cs-review">
                         Had a wonderful experience working with Mo and his team. We learned a lot through his advise. Would thoroughly recommend working with them.
                     </p>
@@ -328,29 +309,30 @@ eleventyNavigation:
             </br>
                 </div>
                 <!--Quote Icon-->
-                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                <img class="cs-quote" aria-hidden="true" src="/assets/images/quote.svg" decoding="async" alt="quote icon" width="120" height="99">
             </li>
             <li class="cs-item">
                 <div class="cs-flex-group">
                     <picture class="cs-picture">
-                        <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot2.jpeg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                        <img class="cs-profile" src="/assets/images/man.png" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
                     </picture>
                     <span class="cs-name">
                         Travis
-                        <span class="cs-job">Founder of Yokoloko</span>
+                        <span class="cs-job">Customer</span>
                     </span>
                 </div>
                 <div class="wrapper">
-                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/stars.svg" alt="stars" width="96" height="16">
                     <p class="cs-review">
                         Mo was super helpful in mentoring me in coaching my daughters U10 team.  He has a gift with kids and is so knowledgeable in youth soccer!  Highly recommend US soccer for your kids soccer mentorship both for skills and for their character!
                     </p>
                 </div>
             </br>
                 <!--Quote Icon-->
-                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                <img class="cs-quote" aria-hidden="true" src="/assets/images/quote.svg" decoding="async" alt="quote icon" width="120" height="99">
             </li>
         </ul>
+        <a href="https://www.google.com/search?q=us+spokane+soccer&sca_esv=ad5fa5b217b92b02&sca_upv=1&rlz=1C1VDKB_enUS1004US1004&sxsrf=ACQVn0_fA2sC0lwpCCxcK_Fif1gPvAFarA%3A1711827758133&ei=LmsIZvLsB7TBkPIPg6aGgAw&ved=0ahUKEwjyu8Kr35yFAxW0IEQIHQOTAcAQ4dUDCBA&uact=5&oq=us+spokane+soccer&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXVzIHNwb2thbmUgc29jY2VyMgQQIxgnSJwbUJEXWJEXcAJ4AZABAJgBaKABaKoBAzAuMbgBA8gBAPgBAZgCA6ACccICChAAGEcY1gQYsAPCAhMQLhiABBiKBRhDGMcBGK8BGLADmAMA4gMFEgExIECIBgGQBgmSBwMyLjGgB_cB&sclient=gws-wiz-serp#lrd=0x6ed80e84e3458897:0xa97ab0b2968f9ed7,1,,,,"><div class="cs-button-solid">See More Reviews</div></a>
     </div>
 </section>
                                 

@@ -16,27 +16,7 @@ eleventyNavigation:
 
 {% block body %}
 
-<!-- ============================================ -->
-<!--                   Banner                     -->
-<!-- ============================================ -->
-
-<div id="banner-849">
-    <div class="cs-container">
-        <span class="cs-int-title">About Us</span>
-    </div>
-    <!--Background Image-->
-    <picture class="cs-background" aria-hidden="true">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/banner.png">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/banner.png">
-        <img loading="lazy" decoding="async" src="/assets/images/banner.png" alt="yoga" width="1280" height="568">
-    </picture>
-    <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
-    <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
-    </svg>
-</div>
+{% include 'components/banner.html' %}
 
 <!-- ============================================ -->
 <!--                 Content Page                 -->
@@ -56,7 +36,7 @@ eleventyNavigation:
     <div class="cs-container">
         <div class="cs-content">
             <h1 class="cs-title">
-                Unveiling Our <span class="cs-color">Purpose</span>: Empowering <span class="cs-color">Communities</span> Through Soccer and Ubuntu <h1>
+                Unveiling Our Purpose: <span class="cs-color">Empowering</span> Communities Through <span class="cs-color">Soccer</span> and <span class="cs-color"> Ubuntu</span> <h1>
             <h2>What's Our Purpose</h2>
             <p>
                 The purpose of Ubuntu Spokane (US) is to provide exceptional coaching consulting and summer soccer camps that inspire and empower children of all ages and skill levels to become passionate, skilled, and compassionate soccer players. Our goal is to create a positive and inclusive soccer community in Spokane, based on the African philosophy of Ubuntu, which emphasizes the interconnectedness of all people and the importance of community. We believe that soccer has the power to bring people together, promote personal growth, and foster a sense of belonging, and we are committed to creating a safe and supportive environment where every player can thrive. Through our coaching consulting, and summer camps, we aim to instill the values of Courage, Accountability, Friendship, and Communication, which will serve coaches and players both on and off the field. Our purpose is to develop not only skilled coaches and soccer players, but also confident and compassionate individuals who will make a positive impact in their communities.
@@ -116,7 +96,7 @@ eleventyNavigation:
                     <p class="cs-item-text">
                         “Ubuntu does not mean that people should not enrich themselves. The question therefore is, are you going to do so in order to enable the community around you?”                    </br>
                     </br>
-                <p class="cs-item-text">-Nelson Mandela</p>
+                <p class="cs-item-author">-Nelson Mandela</p>
                     </p>
                 </a>
                 <picture class="cs-item-background">
@@ -131,7 +111,7 @@ eleventyNavigation:
                     <p class="cs-item-text">
                         “Courage is not simply one of the virtues but the form of every virtue at the testing point, which means at the point of highest reality.”                    </br>
                     </br>
-                    <p class="cs-item-text">-C.S. Lewis</p>
+                    <p class="cs-item-author">-C.S. Lewis</p>
                     </p>
                 </a>
                 <picture class="cs-item-background">
@@ -146,7 +126,7 @@ eleventyNavigation:
                     <p class="cs-item-text">
                         “If you’re going to be a leader, you’re not going to please everybody. You have to hold people accountable, even if you have that moment of being uncomfortable.”                    </br>
                     </br>
-                <p class="cs-item-text">-Kobe Bryant</p>
+                <p class="cs-item-author">-Kobe Bryant</p>
                     </p>
                 </a>
                 <picture class="cs-item-background">
@@ -163,7 +143,7 @@ eleventyNavigation:
                         We’ve helped thousands of organizations transform to become relevant of helped thousands.
                     </br>
                     </br>
-                <p class="cs-item-text">-Muhammad Ali</p>
+                <p class="cs-item-author">-Muhammad Ali</p>
                     </p>
                 </a>
                 <picture class="cs-item-background">
@@ -179,7 +159,7 @@ eleventyNavigation:
                         “Effective teamwork begins and ends with communication.”                    
                     </br>
                     </br>
-                <p class="cs-item-text">-Mike Krzyzewski</p>
+                <p class="cs-item-author">-Mike Krzyzewski</p>
                     </p>
                 </a>
                 <picture class="cs-item-background">
@@ -195,7 +175,7 @@ eleventyNavigation:
                        "The greatest predictor of success is grit"
                     </br>
                     </br>
-                <p class="cs-item-text">-Angela Duckworth</p>
+                <p class="cs-item-author">-Angela Duckworth</p>
                     </p>
                 </a>
                 <picture class="cs-item-background">
@@ -233,7 +213,7 @@ eleventyNavigation:
                 <div class="cs-info">
                     <span class="cs-name">Noah Taigen</span>
                     <span class="cs-job">Coach</span>
-                    <p>Bringing a wealth of experience as a goalkeeper for Northwest Nazarene DII and a standout player at Mead High School, I offer 18 years of playing experience coupled with 4 years of coaching expertise.
+                    <p class="cs-text">Bringing a wealth of experience as a goalkeeper for Northwest Nazarene DII and a standout player at Mead High School, I offer 18 years of playing experience coupled with 4 years of coaching expertise.
                     </br>
                 </br></br></br></p>
                 </div>
@@ -265,7 +245,7 @@ eleventyNavigation:
                 <div class="cs-info">
                     <span class="cs-name">Brandon Shoff</span>
                     <span class="cs-job">Coach</span>
-                    <p>Drawing from 18 years of playing experience as a standout at Mead High School and as a player at SFCC, I bring a deep understanding of the game to my coaching approach. With four years of coaching experience, I am dedicated to nurturing the next generation of athletes</p>
+                    <p class="cs-text">Drawing from 18 years of playing experience as a standout at Mead High School and as a player at SFCC, I bring a deep understanding of the game to my coaching approach. With four years of coaching experience, I am dedicated to nurturing the next generation of athletes</p>
                 </div>
             </li>
         </ul>
