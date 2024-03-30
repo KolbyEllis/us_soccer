@@ -19,72 +19,68 @@ permalink: 'contact/'
 <!--                   Contact                    -->
 <!-- ============================================ -->
 
-<section id="contact-322">
+<section id="contact-1151">
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Contact Us</span>
-            <h2 class="cs-title">We Are Excited To Work With You.</h2>
-            <!--Form-->
-            <form class="cs-form" id="cs-form-322" name="Contact Form" method="post" netlify>
-                <label class="cs-label">
-                    First Name
-                    <input class="cs-input" required type="text" id="name-322" name="name" placeholder="First Name">
-                </label>
-                <label class="cs-label">
-                    Last Name
-                    <input class="cs-input" required type="text" id="name-322" name="name" placeholder="Last Name">
-                    <div class="checkbox">
-
-                </div>
-                </label>
-                <label class="cs-label cs-email">
-                    Email
-                    <input class="cs-input" required type="text" id="email-322" name="email" placeholder="Email">
-                    
-                </label>
-                <label class="cs-label cs-phone">
-                    Phone
-                    <input class="cs-input" required type="text" id="phone-322" name="phone" placeholder="Phone">
-                </label>
-                <label class="cs-label">
-                    Message
-                    <textarea class="cs-input cs-textarea" required name="Message" id="message-322" placeholder="Write message..."></textarea>
-                </label>
-                <button class="cs-button-solid cs-submit" type="submit">Make an Appointment</button>
-            </form>
+            <h2 class="cs-title">We Love to Hear from Our Happy Customers</h2>
         </div>
-        <div class="cs-right">
-            <!--Map Image, pin is made in the CSS-->
-            <picture class="ubuntu-logo">
-                <source media="(max-width: 600px)" srcset="/assets/images/ubuntu_logo.png">
-                <source media="(min-width: 601px)" srcset="/assets/images/ubuntu_logo.png">
-                <img decoding="async" src="/assets/images/ubuntu_logo.png" alt="map" width="610" height="425" aria-hidden="true">
+        <div class="cs-contact-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/form_pic-m.png">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/form_pic.png">
+                <img loading="lazy" decoding="async" src="/assets/images/form_pic.png" alt="people" width="630" height="300">
             </picture>
-            <ul class="cs-contact-group">
-                <li class="cs-item">
-                    <span class="cs-header">
-                        Phone
-                    </span>
-                    <a href="tel:555-456 7899" class="cs-link">(509) 999 4050</a>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Phone</span>
+                        <a href="tel:888-4565-789
+                        " class="cs-link">+1 (509) 999 4050
+                        </a>
+                    </div>
                 </li>
-                <li class="cs-item">
-                    <span class="cs-header">
-                        Email
-                    </span>
-                    <a href="" class="cs-link">mo@usspokane.com</a>
-                </li>
-                <li class="cs-item">
-                    <span class="cs-header">
-                        Our Hours
-                    </span>
-                    <span class="cs-hours">Monday To Saturday</span>
-                    <span class="cs-hours">9:00 AM - 10:30 PM</span>
+                <li class="cs-li">
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Email</span>
+                        <a href="" class="cs-link">mo@usspokane.com</a>
+                    </div>
                 </li>
             </ul>
         </div>
+        <!--Form-->
+        <form class="cs-form" id="cs-form-1151" name="Contact Form" method="post" netlify>
+            <label class="cs-label">
+                First Name
+                <input class="cs-input" required type="text" id="name-322" name="name" placeholder="First Name">
+            </label>
+            <label class="cs-label">
+                Last Name
+                <input class="cs-input" required type="text" id="name-322" name="name" placeholder="Last Name">
+                <div class="checkbox">
+
+            </div>
+            </label>
+            <label class="cs-label cs-email">
+                Email
+                <input class="cs-input" required type="text" id="email-322" name="email" placeholder="Email">
+                
+            </label>
+            <label class="cs-label cs-phone">
+                Phone
+                <input class="cs-input" required type="text" id="phone-322" name="phone" placeholder="Phone">
+            </label>
+            <label class="cs-label">
+                Message
+                <textarea class="cs-input cs-textarea" required name="Message" id="message-322" placeholder="Write message..."></textarea>
+            </label>
+            <div class="cs-button-solid cs-submit" type="submit">Make an Appointment</div>
+        </form>
     </div>
 </section>
-                 
+                                   
 {% include 'components/cta.html' %}
 
 {% endblock %}
