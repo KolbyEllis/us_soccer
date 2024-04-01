@@ -114,7 +114,7 @@
 @media only screen and (min-width: 0rem) {
   #stats-887 {
     padding: var(--sectionPadding);
-    padding-top: 0rem;
+    padding-top: 0;
   }
   #stats-887 .cs-container {
     width: 100%;

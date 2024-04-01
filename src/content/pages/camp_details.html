@@ -13,27 +13,7 @@ permalink: 'camp_details/'
 
 {% block body %}
 
-<!-- ============================================ -->
-<!--                   Banner                     -->
-<!-- ============================================ -->
-
-<div id="banner-849">
-    <div class="cs-container">
-        <span class="cs-int-title">Camp Details</span>
-    </div>
-    <!--Background Image-->
-    <picture class="cs-background" aria-hidden="true">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga-m.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga.jpg">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga.jpg" alt="yoga" width="1280" height="568">
-    </picture>
-    <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
-    <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
-    </svg>
-</div>                    
+{% include 'components/banner.html' %}
 
 <!-- ============================================ -->
 <!--                 Content Page                 -->
@@ -105,8 +85,9 @@ permalink: 'camp_details/'
                 <li>11am - 11:15am - Snack Break</li>
                 <li>6:30pm - 6:45pm - Introduction to Soccer Development Games </li>
             </ul>
-
-
+            <h1 class="cs-title">Ready To Sign Up?</h1>
+            <a href="/camps" class="cs-button-solid">View Our Youth Camps</a>
+            <a href="https://form.jotform.com/240888526058164" class="cs-button-solid">Sign Up For Our Toddler Camps</a>
 
         </div>
         <div class="cs-image-group">
@@ -128,6 +109,8 @@ permalink: 'camp_details/'
             </picture>
         </div>
     </div>
-</section>
+</section>        
+
+{% include 'components/cta.html' %}
                                                   
 {% endblock %}
