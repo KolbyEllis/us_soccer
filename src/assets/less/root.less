@@ -87,24 +87,57 @@
         transition: color 0.3s;
         transition-delay: 0.1s;
     }
-    .cs-button-solid2 {
-        font-size: (16/16rem);
-        font-weight: bold;
-        line-height: (50/16em);
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: none;
-        width: auto;
-        padding: 0 (30/16rem);
+    /* you can copy and paste this into your global stylesheet to be used everywhere in your site */
 
-        // Transition Properties
-        color: #ffffff;
-        background-color: grey;
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        transition: color 0.3s;
-        transition-delay: 0.1s;
+    #button-box-838 {
+        width: 100%;
+        max-width: (630/16rem);
+        margin-bottom: (32/16rem);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: (24/16rem);
+
+        .cs-button-solid {
+            font-size: (16/16rem);
+            font-weight: bold;
+            line-height: (50/16em);
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            width: auto;
+            padding: 0 (30/16rem);
+    
+            // Transition Properties
+            color: #ffffff;
+            background-color: var(--primary);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s;
+            transition-delay: 0.1s;
+        }
+
+        .cs-button-solid2 {
+            font-size: (16/16rem);
+            font-weight: bold;
+            line-height: (50/16em);
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            width: auto;
+            padding: 0 (30/16rem);
+    
+            // Transition Properties
+            color: #ffffff;
+            background-color: grey;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s;
+            transition-delay: 0.1s;
+        }
     }
 }
 

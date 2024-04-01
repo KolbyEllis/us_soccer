@@ -78,7 +78,35 @@
     transition: color 0.3s;
     transition-delay: 0.1s;
   }
-  .cs-button-solid2 {
+  /* you can copy and paste this into your global stylesheet to be used everywhere in your site */
+  #button-box-838 {
+    width: 100%;
+    max-width: 39.375rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  #button-box-838 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 3.125em;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: auto;
+    padding: 0 1.875rem;
+    color: #ffffff;
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+    transition-delay: 0.1s;
+  }
+  #button-box-838 .cs-button-solid2 {
     font-size: 1rem;
     font-weight: bold;
     line-height: 3.125em;

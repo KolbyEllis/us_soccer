@@ -44,6 +44,9 @@
   #why-choose-1631 .cs-text:last-of-type {
     margin-bottom: 0rem;
   }
+  #why-choose-1631 .cs-button-solid {
+    margin-top: 1rem;
+  }
   #why-choose-1631 .cs-video {
     display: block;
     position: relative;
