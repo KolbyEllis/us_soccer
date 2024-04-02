@@ -23,6 +23,55 @@
     gap: clamp(3rem, 6vw, 4rem);
     position: relative;
   }
+  #content-page-849 #button-box-838 {
+    width: 100%;
+    max-width: 39.375rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  #content-page-849 #button-box-838 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #content-page-849 #button-box-838 .cs-button-solid2 {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: white;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: grey;
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+  }
   #content-page-849 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
