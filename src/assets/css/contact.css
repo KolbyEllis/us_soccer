@@ -110,6 +110,9 @@
     align-items: center;
     gap: 0.75rem;
   }
+  #contact-1151 .cs-submit {
+    border: none;
+  }
   #contact-1151 .cs-label {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
