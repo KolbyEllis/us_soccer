@@ -736,6 +736,9 @@
     /* prevent flexbox from squishing it */
     flex: none;
   }
+  #cs-navigation .cs-li:last-child {
+    display: none;
+  }
   #cs-navigation .cs-li-link {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 0.6vw, 1rem);

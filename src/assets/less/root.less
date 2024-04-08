@@ -883,6 +883,10 @@
             padding: (40/16rem) 0;
             /* prevent flexbox from squishing it */
             flex: none;
+
+            &:last-child {
+                display: none;
+            }
         }
 
         .cs-li-link {
@@ -930,7 +934,7 @@
                     opacity: 1;
                     transform: translate(-50%, -50%) scale(1);
                 }
-            }
+            }            
         }
 
         .cs-button-solid {
