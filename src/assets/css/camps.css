@@ -401,28 +401,70 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+  #collection-2 {
+    display: flex;
+    justify-content: center;
+    padding: var(--sectionPadding);
+    padding-top: 0;
+  }
   #collection-2 .cs-container {
     max-width: 80rem;
+    /* 1280px in rem */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #collection-2 .cs-card-group {
+    list-style: none;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: clamp(1rem, 3vw, 1.25rem);
+    justify-content: center;
   }
   #collection-2 .cs-item {
-    grid-column: span 8;
+    text-align: center;
+    max-width: 100%;
+    grid-column: span 12;
+    /* Adjust the span as needed */
+    justify-self: center;
+    /* Center the item horizontally */
+    position: relative;
+  }
+  #collection-2 .cs-item:hover .cs-category {
+    color: var(--primary);
   }
   #collection-2 .cs-picture {
-    /* 180px - 348px */
     height: clamp(11.75rem, 25vw, 21.75rem);
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #collection-2 .cs-container {
-    max-width: 80rem;
-  }
-  #collection-2 .cs-item {
-    grid-column: span 4;
-  }
-  #collection-2 .cs-picture {
     /* 180px - 348px */
-    height: clamp(11.75rem, 25vw, 21.75rem);
+  }
+  #collection-2 .cs-category {
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    color: var(--headerColor);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  #collection-2 .cs-category:hover {
+    color: var(--primary);
+  }
+  #collection-2 .cs-quantity {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    color: var(--bodyTextColor);
+    display: flex;
+    justify-content: center;
   }
 }
 /*-- -------------------------- -->
